@@ -1,0 +1,122 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate E:\School\EmbeddedSystem\nios2leds\HostSystem.Qsys --block-symbol-file --output-directory=E:\School\EmbeddedSystem\nios2leds\HostSystem --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading nios2leds/HostSystem.Qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_gen2 18.1]
+Progress: Parameterizing module cpu
+Progress: Adding dipsw_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module dipsw_pio
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module led_pio
+Progress: Adding memory [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module memory
+Progress: Adding sys_clk_timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: HostSystem.dipsw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: HostSystem.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate E:\School\EmbeddedSystem\nios2leds\HostSystem.Qsys --synthesis=VHDL --output-directory=E:\School\EmbeddedSystem\nios2leds\HostSystem\synthesis --family="Cyclone V" --part=5CSEBA6U23I7
+Progress: Loading nios2leds/HostSystem.Qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_gen2 18.1]
+Progress: Parameterizing module cpu
+Progress: Adding dipsw_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module dipsw_pio
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_pio [altera_avalon_pio 18.1]
+Progress: Parameterizing module led_pio
+Progress: Adding memory [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module memory
+Progress: Adding sys_clk_timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: HostSystem.dipsw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: HostSystem.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: HostSystem: Generating HostSystem "HostSystem" for QUARTUS_SYNTH
+Info: cpu: "HostSystem" instantiated altera_nios2_gen2 "cpu"
+Info: dipsw_pio: Starting RTL generation for module 'HostSystem_dipsw_pio'
+Info: dipsw_pio:   Generation command is [exec E:/quartus/quartus/bin64/perl/bin/perl.exe -I E:/quartus/quartus/bin64/perl/lib -I E:/quartus/quartus/sopc_builder/bin/europa -I E:/quartus/quartus/sopc_builder/bin/perl_lib -I E:/quartus/quartus/sopc_builder/bin -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=HostSystem_dipsw_pio --dir=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0027_dipsw_pio_gen/ --quartus_dir=E:/quartus/quartus --verilog --config=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0027_dipsw_pio_gen//HostSystem_dipsw_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: dipsw_pio: Done RTL generation for module 'HostSystem_dipsw_pio'
+Info: dipsw_pio: "HostSystem" instantiated altera_avalon_pio "dipsw_pio"
+Info: jtag_uart: Starting RTL generation for module 'HostSystem_jtag_uart'
+Info: jtag_uart:   Generation command is [exec E:/quartus/quartus/bin64/perl/bin/perl.exe -I E:/quartus/quartus/bin64/perl/lib -I E:/quartus/quartus/sopc_builder/bin/europa -I E:/quartus/quartus/sopc_builder/bin/perl_lib -I E:/quartus/quartus/sopc_builder/bin -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=HostSystem_jtag_uart --dir=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0028_jtag_uart_gen/ --quartus_dir=E:/quartus/quartus --verilog --config=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0028_jtag_uart_gen//HostSystem_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'HostSystem_jtag_uart'
+Info: jtag_uart: "HostSystem" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: led_pio: Starting RTL generation for module 'HostSystem_led_pio'
+Info: led_pio:   Generation command is [exec E:/quartus/quartus/bin64/perl/bin/perl.exe -I E:/quartus/quartus/bin64/perl/lib -I E:/quartus/quartus/sopc_builder/bin/europa -I E:/quartus/quartus/sopc_builder/bin/perl_lib -I E:/quartus/quartus/sopc_builder/bin -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=HostSystem_led_pio --dir=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0029_led_pio_gen/ --quartus_dir=E:/quartus/quartus --verilog --config=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0029_led_pio_gen//HostSystem_led_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: led_pio: Done RTL generation for module 'HostSystem_led_pio'
+Info: led_pio: "HostSystem" instantiated altera_avalon_pio "led_pio"
+Info: memory: Starting RTL generation for module 'HostSystem_memory'
+Info: memory:   Generation command is [exec E:/quartus/quartus/bin64/perl/bin/perl.exe -I E:/quartus/quartus/bin64/perl/lib -I E:/quartus/quartus/sopc_builder/bin/europa -I E:/quartus/quartus/sopc_builder/bin/perl_lib -I E:/quartus/quartus/sopc_builder/bin -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=HostSystem_memory --dir=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0030_memory_gen/ --quartus_dir=E:/quartus/quartus --verilog --config=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0030_memory_gen//HostSystem_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: memory: Done RTL generation for module 'HostSystem_memory'
+Info: memory: "HostSystem" instantiated altera_avalon_onchip_memory2 "memory"
+Info: sys_clk_timer: Starting RTL generation for module 'HostSystem_sys_clk_timer'
+Info: sys_clk_timer:   Generation command is [exec E:/Quartus/quartus/bin64//perl/bin/perl.exe -I E:/Quartus/quartus/bin64//perl/lib -I E:/quartus/quartus/sopc_builder/bin/europa -I E:/quartus/quartus/sopc_builder/bin/perl_lib -I E:/quartus/quartus/sopc_builder/bin -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/common -I E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- E:/quartus/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=HostSystem_sys_clk_timer --dir=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0031_sys_clk_timer_gen/ --quartus_dir=E:/quartus/quartus --verilog --config=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0031_sys_clk_timer_gen//HostSystem_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk_timer: Done RTL generation for module 'HostSystem_sys_clk_timer'
+Info: sys_clk_timer: "HostSystem" instantiated altera_avalon_timer "sys_clk_timer"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "HostSystem" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "HostSystem" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "HostSystem" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'HostSystem_cpu_cpu'
+Info: cpu:   Generation command is [exec E:/Quartus/quartus/bin64//eperlcmd.exe -I E:/Quartus/quartus/bin64//perl/lib -I E:/quartus/quartus/sopc_builder/bin/europa -I E:/quartus/quartus/sopc_builder/bin/perl_lib -I E:/quartus/quartus/sopc_builder/bin -I E:/quartus/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I E:/quartus/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I E:/quartus/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I E:/quartus/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- E:/quartus/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=HostSystem_cpu_cpu --dir=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0034_cpu_gen/ --quartus_bindir=E:/Quartus/quartus/bin64/ --verilog --config=C:/Users/Cell/AppData/Local/Temp/alt7839_5264528925448242079.dir/0034_cpu_gen//HostSystem_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2018.11.04 15:04:33 (*) Starting Nios II generation
+Info: cpu: # 2018.11.04 15:04:33 (*)   Checking for plaintext license.
+Info: cpu: # 2018.11.04 15:04:34 (*)   Couldn't query license setup in Quartus directory E:/Quartus/quartus/bin64/
+Info: cpu: # 2018.11.04 15:04:34 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2018.11.04 15:04:34 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2018.11.04 15:04:34 (*)   Plaintext license not found.
+Info: cpu: # 2018.11.04 15:04:34 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2018.11.04 15:04:34 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.11.04 15:04:34 (*)   Creating all objects for CPU
+Info: cpu: # 2018.11.04 15:04:35 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.11.04 15:04:35 (*)   Creating plain-text RTL
+Info: cpu: # 2018.11.04 15:04:36 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'HostSystem_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file E:/School/EmbeddedSystem/nios2leds/HostSystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/School/EmbeddedSystem/nios2leds/HostSystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file E:/School/EmbeddedSystem/nios2leds/HostSystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: HostSystem: Done "HostSystem" with 29 modules, 42 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

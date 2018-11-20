@@ -1,0 +1,60 @@
+# Reading E:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
+# do FullAdder_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying E:/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {FullAdder.vho}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:26:49 on Nov 10,2018
+# vcom -reportprogress 300 -93 -work work FullAdder.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity FullAdder
+# -- Compiling architecture structure of FullAdder
+# End time: 21:26:49 on Nov 10,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.fulladder
+# vsim work.fulladder 
+# Start time: 21:26:57 on Nov 10,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.fulladder(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# BKMARK_ERROR: Unknown client: .main_pane.source
+add wave -position insertpoint sim:/fulladder/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ali  Hostname: NB351W10  ProcessID: 16796
+#           Attempting to use alternate WLF file "./wlftevvk4f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftevvk4f
+force -freeze sim:/fulladder/A1 1 0, 0 {5 ps} -r 10
+force -freeze sim:/fulladder/B1 1 0, 0 {10 ps} -r 20
+force -freeze sim:/fulladder/A2 1 0, 0 {15 ps} -r 30
+force -freeze sim:/fulladder/B2 1 0, 0 {20 ps} -r 40
+run
+restart
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf E:/School/EmbeddedSystem/assignment1/simulation/modelsim/work_good_11.do
